@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FADB62811BB411BA00C6C854 /* WebMercator.h in Headers */ = {isa = PBXBuildFile; fileRef = FADB62801BB411BA00C6C854 /* WebMercator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FADB62881BB411BA00C6C854 /* WebMercator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADB627D1BB411BA00C6C854 /* WebMercator.framework */; settings = {ASSET_TAGS = (); }; };
+		FADB628D1BB411BA00C6C854 /* WebMercatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADB62891BB411BA00C6C854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADB62741BB411BA00C6C854 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADB627C1BB411BA00C6C854;
+			remoteInfo = WebMercator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FADB627D1BB411BA00C6C854 /* WebMercator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebMercator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADB62801BB411BA00C6C854 /* WebMercator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebMercator.h; sourceTree = "<group>"; };
+		FADB62821BB411BA00C6C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADB62871BB411BA00C6C854 /* WebMercatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebMercatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMercatorTests.swift; sourceTree = "<group>"; };
+		FADB628E1BB411BA00C6C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADB62791BB411BA00C6C854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADB62841BB411BA00C6C854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADB62881BB411BA00C6C854 /* WebMercator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FADB62731BB411BA00C6C854 = {
+			isa = PBXGroup;
+			children = (
+				FADB627F1BB411BA00C6C854 /* WebMercator */,
+				FADB628B1BB411BA00C6C854 /* WebMercatorTests */,
+				FADB627E1BB411BA00C6C854 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADB627E1BB411BA00C6C854 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADB627D1BB411BA00C6C854 /* WebMercator.framework */,
+				FADB62871BB411BA00C6C854 /* WebMercatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADB627F1BB411BA00C6C854 /* WebMercator */ = {
+			isa = PBXGroup;
+			children = (
+				FADB62801BB411BA00C6C854 /* WebMercator.h */,
+				FADB62821BB411BA00C6C854 /* Info.plist */,
+			);
+			path = WebMercator;
+			sourceTree = "<group>";
+		};
+		FADB628B1BB411BA00C6C854 /* WebMercatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */,
+				FADB628E1BB411BA00C6C854 /* Info.plist */,
+			);
+			path = WebMercatorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FADB627A1BB411BA00C6C854 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADB62811BB411BA00C6C854 /* WebMercator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FADB627C1BB411BA00C6C854 /* WebMercator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADB62911BB411BA00C6C854 /* Build configuration list for PBXNativeTarget "WebMercator" */;
+			buildPhases = (
+				FADB62781BB411BA00C6C854 /* Sources */,
+				FADB62791BB411BA00C6C854 /* Frameworks */,
+				FADB627A1BB411BA00C6C854 /* Headers */,
+				FADB627B1BB411BA00C6C854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebMercator;
+			productName = WebMercator;
+			productReference = FADB627D1BB411BA00C6C854 /* WebMercator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FADB62861BB411BA00C6C854 /* WebMercatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADB62941BB411BA00C6C854 /* Build configuration list for PBXNativeTarget "WebMercatorTests" */;
+			buildPhases = (
+				FADB62831BB411BA00C6C854 /* Sources */,
+				FADB62841BB411BA00C6C854 /* Frameworks */,
+				FADB62851BB411BA00C6C854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADB628A1BB411BA00C6C854 /* PBXTargetDependency */,
+			);
+			name = WebMercatorTests;
+			productName = WebMercatorTests;
+			productReference = FADB62871BB411BA00C6C854 /* WebMercatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADB62741BB411BA00C6C854 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Nayutaya Inc.";
+				TargetAttributes = {
+					FADB627C1BB411BA00C6C854 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					FADB62861BB411BA00C6C854 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = FADB62771BB411BA00C6C854 /* Build configuration list for PBXProject "WebMercator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FADB62731BB411BA00C6C854;
+			productRefGroup = FADB627E1BB411BA00C6C854 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADB627C1BB411BA00C6C854 /* WebMercator */,
+				FADB62861BB411BA00C6C854 /* WebMercatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADB627B1BB411BA00C6C854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADB62851BB411BA00C6C854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADB62781BB411BA00C6C854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADB62831BB411BA00C6C854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADB628D1BB411BA00C6C854 /* WebMercatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADB628A1BB411BA00C6C854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADB627C1BB411BA00C6C854 /* WebMercator */;
+			targetProxy = FADB62891BB411BA00C6C854 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FADB628F1BB411BA00C6C854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FADB62901BB411BA00C6C854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FADB62921BB411BA00C6C854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WebMercator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FADB62931BB411BA00C6C854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WebMercator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FADB62951BB411BA00C6C854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WebMercatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FADB62961BB411BA00C6C854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WebMercatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADB62771BB411BA00C6C854 /* Build configuration list for PBXProject "WebMercator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADB628F1BB411BA00C6C854 /* Debug */,
+				FADB62901BB411BA00C6C854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADB62911BB411BA00C6C854 /* Build configuration list for PBXNativeTarget "WebMercator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADB62921BB411BA00C6C854 /* Debug */,
+				FADB62931BB411BA00C6C854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FADB62941BB411BA00C6C854 /* Build configuration list for PBXNativeTarget "WebMercatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADB62951BB411BA00C6C854 /* Debug */,
+				FADB62961BB411BA00C6C854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADB62741BB411BA00C6C854 /* Project object */;
+}
