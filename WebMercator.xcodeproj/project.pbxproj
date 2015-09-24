@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA9196D11BB417C1000AE119 /* WebMercator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9196D01BB417C1000AE119 /* WebMercator.swift */; settings = {ASSET_TAGS = (); }; };
+		FA9196D31BB41823000AE119 /* Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9196D21BB41823000AE119 /* Projector.swift */; settings = {ASSET_TAGS = (); }; };
 		FADB62811BB411BA00C6C854 /* WebMercator.h in Headers */ = {isa = PBXBuildFile; fileRef = FADB62801BB411BA00C6C854 /* WebMercator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADB62881BB411BA00C6C854 /* WebMercator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADB627D1BB411BA00C6C854 /* WebMercator.framework */; settings = {ASSET_TAGS = (); }; };
 		FADB628D1BB411BA00C6C854 /* WebMercatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA9196D01BB417C1000AE119 /* WebMercator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebMercator.swift; sourceTree = "<group>"; };
+		FA9196D21BB41823000AE119 /* Projector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projector.swift; sourceTree = "<group>"; };
 		FADB627D1BB411BA00C6C854 /* WebMercator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebMercator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADB62801BB411BA00C6C854 /* WebMercator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebMercator.h; sourceTree = "<group>"; };
 		FADB62821BB411BA00C6C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				FADB62801BB411BA00C6C854 /* WebMercator.h */,
 				FADB62821BB411BA00C6C854 /* Info.plist */,
+				FA9196D01BB417C1000AE119 /* WebMercator.swift */,
+				FA9196D21BB41823000AE119 /* Projector.swift */,
 			);
 			path = WebMercator;
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 		FADB62741BB411BA00C6C854 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Nayutaya Inc.";
 				TargetAttributes = {
@@ -193,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9196D31BB41823000AE119 /* Projector.swift in Sources */,
+				FA9196D11BB417C1000AE119 /* WebMercator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +316,7 @@
 		FADB62921BB411BA00C6C854 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +327,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FADB62931BB411BA00C6C854 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -375,6 +387,7 @@
 				FADB62931BB411BA00C6C854 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FADB62941BB411BA00C6C854 /* Build configuration list for PBXNativeTarget "WebMercatorTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +396,7 @@
 				FADB62961BB411BA00C6C854 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
