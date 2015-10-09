@@ -8,24 +8,31 @@ class ProjectorSpec : QuickSpec {
         describe("Projector") {
             describe(".latitudeToMercatorY") {
                 it("緯度をメルカトルY座標に変換する") {
-                    expect(Projector.latitudeToMercatorY(+85.0511)).to(beCloseTo(+1.0, within: +1.0e-5))
-                    expect(Projector.latitudeToMercatorY(  0.0000)).to(beCloseTo( 0.0, within: +1.0e-15))
-                    expect(Projector.latitudeToMercatorY(-85.0511)).to(beCloseTo(-1.0, within: +1.0e-5))
+                    expect(Projector.latitudeToMercatorY(+85.0511)).to(beCloseTo(+1.0, within: 1.0e-5))
+                    expect(Projector.latitudeToMercatorY(  0.0000)).to(beCloseTo( 0.0, within: 1.0e-15))
+                    expect(Projector.latitudeToMercatorY(-85.0511)).to(beCloseTo(-1.0, within: 1.0e-5))
                 }
             }
+            describe(".longitudeToMercatorX") {
+                it("経度をメルカトルX座標に変換する") {
+                    expect(Projector.longitudeToMercatorX(+180.0)).to(beCloseTo(+1.0, within: 1.0e-5))
+                    expect(Projector.longitudeToMercatorX( +90.0)).to(beCloseTo(+0.5, within: 1.0e-5))
+                    expect(Projector.longitudeToMercatorX(   0.0)).to(beCloseTo( 0.0, within: 1.0e-5))
+                    expect(Projector.longitudeToMercatorX( -90.0)).to(beCloseTo(-0.5, within: 1.0e-5))
+                    expect(Projector.longitudeToMercatorX(-180.0)).to(beCloseTo(-1.0, within: 1.0e-5))
+                }
+            }
+            /*
+            describe("") {
+                it("") {
+                }
+            }
+            */
         }
     }
 }
 
 /*
-  describe ".longitudeToMercatorX", ->
-    it "経度をメルカトルX座標に変換する", ->
-      expect(Projector.longitudeToMercatorX(+180.0)).toBeCloseTo(+1.0, 5)
-      expect(Projector.longitudeToMercatorX( +90.0)).toBeCloseTo(+0.5, 5)
-      expect(Projector.longitudeToMercatorX(   0.0)).toBeCloseTo( 0.0, 5)
-      expect(Projector.longitudeToMercatorX( -90.0)).toBeCloseTo(-0.5, 5)
-      expect(Projector.longitudeToMercatorX(-180.0)).toBeCloseTo(-1.0, 5)
-
   describe ".mercatorYToLatitude", ->
     it "メルカトルY座標を緯度に変換する", ->
       expect(Projector.mercatorYToLatitude(+1.0)).toBeCloseTo(+85.0511,  4)
