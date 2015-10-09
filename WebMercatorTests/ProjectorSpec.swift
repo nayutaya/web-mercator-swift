@@ -1,20 +1,23 @@
 
 import Quick
 import Nimble
+@testable import WebMercator
 
-//class ProjectorSpec : QuickSpec {
-//}
+class ProjectorSpec : QuickSpec {
+    override func spec() {
+        describe("Projector") {
+            describe(".latitudeToMercatorY") {
+                it("緯度をメルカトルY座標に変換する") {
+                    expect(Projector.latitudeToMercatorY(+85.0511)).to(beCloseTo(+1.0, within: +1.0e-5))
+                    expect(Projector.latitudeToMercatorY(  0.0000)).to(beCloseTo( 0.0, within: +1.0e-15))
+                    expect(Projector.latitudeToMercatorY(-85.0511)).to(beCloseTo(-1.0, within: +1.0e-5))
+                }
+            }
+        }
+    }
+}
 
 /*
-Projector = require "./projector"
-
-describe "Projector", ->
-  describe ".latitudeToMercatorY", ->
-    it "緯度をメルカトルY座標に変換する", ->
-      expect(Projector.latitudeToMercatorY(+85.0511)).toBeCloseTo(+1.0,  5)
-      expect(Projector.latitudeToMercatorY(  0.0000)).toBeCloseTo( 0.0, 15)
-      expect(Projector.latitudeToMercatorY(-85.0511)).toBeCloseTo(-1.0,  5)
-
   describe ".longitudeToMercatorX", ->
     it "経度をメルカトルX座標に変換する", ->
       expect(Projector.longitudeToMercatorX(+180.0)).toBeCloseTo(+1.0, 5)
