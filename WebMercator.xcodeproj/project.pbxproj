@@ -44,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		FA7BFCCA1BC7961F008C18E7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		FA7BFCCC1BC79988008C18E7 /* WebMercatorTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebMercatorTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA7BFCD21BC7A1CC008C18E7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		FA9196D01BB417C1000AE119 /* WebMercator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebMercator.swift; sourceTree = "<group>"; };
 		FA9196D21BB41823000AE119 /* Projector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projector.swift; sourceTree = "<group>"; };
@@ -113,7 +112,6 @@
 			children = (
 				FADB628E1BB411BA00C6C854 /* Info.plist */,
 				FA9196D61BB41BB8000AE119 /* ProjectorSpec.swift */,
-				FA7BFCCC1BC79988008C18E7 /* WebMercatorTests-Bridging-Header.h */,
 			);
 			path = WebMercatorTests;
 			sourceTree = "<group>";
@@ -395,7 +393,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WebMercatorTests/WebMercatorTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -412,7 +409,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WebMercatorTests/WebMercatorTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
