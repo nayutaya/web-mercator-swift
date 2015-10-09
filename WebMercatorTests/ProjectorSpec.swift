@@ -1,5 +1,9 @@
 
-import Foundation
+import Quick
+import Nimble
+
+//class ProjectorSpec : QuickSpec {
+//}
 
 /*
 Projector = require "./projector"

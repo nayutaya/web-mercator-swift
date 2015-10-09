@@ -2,7 +2,10 @@
 import Foundation
 
 class Projector {
-    
+    // 度をラジアンに変換するための係数
+    let DEGREE_TO_RADIAN = M_PI / 180.0
+    // ラジアンを度に変換するための係数
+    let RADIAN_TO_DEGREE = 180.0 / M_PI
 }
 
 /*
@@ -12,11 +15,6 @@ module.exports = class Projector
   log  = Math.log
   sin  = Math.sin
   asin = Math.asin
-
-  # 度をラジアンに変換するための係数
-  DEGREE_TO_RADIAN = PI / 180.0
-  # ラジアンを度に変換するための係数
-  RADIAN_TO_DEGREE = 180.0 / PI
 
   # 双曲線正弦を求める
   sinh = (x)-> (exp(x) - exp(-x)) / 2.0
