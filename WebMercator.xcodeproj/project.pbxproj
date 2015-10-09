@@ -16,7 +16,6 @@
 		FA9196D71BB41BB8000AE119 /* ProjectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9196D61BB41BB8000AE119 /* ProjectorSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		FADB62811BB411BA00C6C854 /* WebMercator.h in Headers */ = {isa = PBXBuildFile; fileRef = FADB62801BB411BA00C6C854 /* WebMercator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADB62881BB411BA00C6C854 /* WebMercator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADB627D1BB411BA00C6C854 /* WebMercator.framework */; settings = {ASSET_TAGS = (); }; };
-		FADB628D1BB411BA00C6C854 /* WebMercatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		FADB62801BB411BA00C6C854 /* WebMercator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebMercator.h; sourceTree = "<group>"; };
 		FADB62821BB411BA00C6C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADB62871BB411BA00C6C854 /* WebMercatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebMercatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMercatorTests.swift; sourceTree = "<group>"; };
 		FADB628E1BB411BA00C6C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +111,6 @@
 		FADB628B1BB411BA00C6C854 /* WebMercatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */,
 				FADB628E1BB411BA00C6C854 /* Info.plist */,
 				FA9196D61BB41BB8000AE119 /* ProjectorSpec.swift */,
 				FA7BFCCC1BC79988008C18E7 /* WebMercatorTests-Bridging-Header.h */,
@@ -240,7 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9196D71BB41BB8000AE119 /* ProjectorSpec.swift in Sources */,
-				FADB628D1BB411BA00C6C854 /* WebMercatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
