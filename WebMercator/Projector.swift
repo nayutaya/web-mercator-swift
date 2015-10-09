@@ -1,6 +1,4 @@
 
-import Foundation
-
 class Projector {
     // 度をラジアンに変換するための係数
     static let DEGREE_TO_RADIAN = M_PI / 180.0
