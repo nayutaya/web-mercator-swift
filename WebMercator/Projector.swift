@@ -30,21 +30,3 @@ class Projector {
         return x * 180.0
     }
 }
-
-/*
-module.exports = class Projector
-  PI   = Math.PI
-  exp  = Math.exp
-  log  = Math.log
-  sin  = Math.sin
-  asin = Math.asin
-
-  # 双曲線正弦を求める
-  sinh = (x)-> (exp(x) - exp(-x)) / 2.0
-  # 双曲線余弦を求める
-  cosh = (x)-> (exp(x) + exp(-x)) / 2.0
-  # 双曲線正接を求める
-  tanh = (x)-> sinh(x) / cosh(x)
-  # 双曲線逆正接を求める
-  atanh = (x)-> log((1 + x) / (1 - x)) / 2
-*/
