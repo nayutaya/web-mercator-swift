@@ -5,7 +5,7 @@ class Projector {
     // 度をラジアンに変換するための係数
     static let DEGREE_TO_RADIAN = M_PI / 180.0
     // ラジアンを度に変換するための係数
-//    static let RADIAN_TO_DEGREE = 180.0 / M_PI
+    static let RADIAN_TO_DEGREE = 180.0 / M_PI
     
     // 緯度をメルカトルY座標に変換する
     class func latitudeToMercatorY(latitudeInDegrees: Double) -> Double {
@@ -15,6 +15,11 @@ class Projector {
     // 経度をメルカトルX座標に変換する
     class func longitudeToMercatorX(longitudeInDegrees: Double) -> Double {
         return longitudeInDegrees / 180.0
+    }
+    
+    // メルカトルY座標を緯度に変換する
+    class func mercatorYToLatitude(mercatorY: Double) -> Double {
+        return asin(tanh(mercatorY * M_PI)) * RADIAN_TO_DEGREE
     }
 }
 
@@ -34,10 +39,6 @@ module.exports = class Projector
   tanh = (x)-> sinh(x) / cosh(x)
   # 双曲線逆正接を求める
   atanh = (x)-> log((1 + x) / (1 - x)) / 2
-
-  # メルカトルY座標を緯度に変換する
-  @mercatorYToLatitude: (mercatorY)->
-    return asin(tanh(mercatorY * PI)) * RADIAN_TO_DEGREE
 
   # メルカトルX座標を経度に変換する
   @mercatorXToLongitude: (mercatorX)->
