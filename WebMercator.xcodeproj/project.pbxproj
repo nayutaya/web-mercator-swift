@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA7BFCD71BC7A22A008C18E7 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA7BFCCA1BC7961F008C18E7 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA7BFCD81BC7A235008C18E7 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA7BFCD21BC7A1CC008C18E7 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA7BFCD91BC7A2F0008C18E7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BFCCA1BC7961F008C18E7 /* Quick.framework */; };
+		FA7BFCDA1BC7A2F2008C18E7 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BFCD21BC7A1CC008C18E7 /* Nimble.framework */; };
+		FA9196D11BB417C1000AE119 /* WebMercator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9196D01BB417C1000AE119 /* WebMercator.swift */; settings = {ASSET_TAGS = (); }; };
+		FA9196D31BB41823000AE119 /* Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9196D21BB41823000AE119 /* Projector.swift */; settings = {ASSET_TAGS = (); }; };
+		FA9196D71BB41BB8000AE119 /* ProjectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9196D61BB41BB8000AE119 /* ProjectorSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		FADB62811BB411BA00C6C854 /* WebMercator.h in Headers */ = {isa = PBXBuildFile; fileRef = FADB62801BB411BA00C6C854 /* WebMercator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADB62881BB411BA00C6C854 /* WebMercator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADB627D1BB411BA00C6C854 /* WebMercator.framework */; settings = {ASSET_TAGS = (); }; };
-		FADB628D1BB411BA00C6C854 /* WebMercatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,12 +28,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FA7BFCD51BC7A221008C18E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA7BFCD81BC7A235008C18E7 /* Nimble.framework in CopyFiles */,
+				FA7BFCD71BC7A22A008C18E7 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FA7BFCCA1BC7961F008C18E7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		FA7BFCD21BC7A1CC008C18E7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		FA9196D01BB417C1000AE119 /* WebMercator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebMercator.swift; sourceTree = "<group>"; };
+		FA9196D21BB41823000AE119 /* Projector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projector.swift; sourceTree = "<group>"; };
+		FA9196D61BB41BB8000AE119 /* ProjectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectorSpec.swift; sourceTree = "<group>"; };
 		FADB627D1BB411BA00C6C854 /* WebMercator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebMercator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADB62801BB411BA00C6C854 /* WebMercator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebMercator.h; sourceTree = "<group>"; };
 		FADB62821BB411BA00C6C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADB62871BB411BA00C6C854 /* WebMercatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebMercatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMercatorTests.swift; sourceTree = "<group>"; };
 		FADB628E1BB411BA00C6C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +68,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADB62881BB411BA00C6C854 /* WebMercator.framework in Frameworks */,
+				FA7BFCD91BC7A2F0008C18E7 /* Quick.framework in Frameworks */,
+				FA7BFCDA1BC7A2F2008C18E7 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +79,8 @@
 		FADB62731BB411BA00C6C854 = {
 			isa = PBXGroup;
 			children = (
+				FA7BFCD21BC7A1CC008C18E7 /* Nimble.framework */,
+				FA7BFCCA1BC7961F008C18E7 /* Quick.framework */,
 				FADB627F1BB411BA00C6C854 /* WebMercator */,
 				FADB628B1BB411BA00C6C854 /* WebMercatorTests */,
 				FADB627E1BB411BA00C6C854 /* Products */,
@@ -73,6 +101,8 @@
 			children = (
 				FADB62801BB411BA00C6C854 /* WebMercator.h */,
 				FADB62821BB411BA00C6C854 /* Info.plist */,
+				FA9196D01BB417C1000AE119 /* WebMercator.swift */,
+				FA9196D21BB41823000AE119 /* Projector.swift */,
 			);
 			path = WebMercator;
 			sourceTree = "<group>";
@@ -80,8 +110,8 @@
 		FADB628B1BB411BA00C6C854 /* WebMercatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				FADB628C1BB411BA00C6C854 /* WebMercatorTests.swift */,
 				FADB628E1BB411BA00C6C854 /* Info.plist */,
+				FA9196D61BB41BB8000AE119 /* ProjectorSpec.swift */,
 			);
 			path = WebMercatorTests;
 			sourceTree = "<group>";
@@ -125,6 +155,7 @@
 				FADB62831BB411BA00C6C854 /* Sources */,
 				FADB62841BB411BA00C6C854 /* Frameworks */,
 				FADB62851BB411BA00C6C854 /* Resources */,
+				FA7BFCD51BC7A221008C18E7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -142,6 +173,7 @@
 		FADB62741BB411BA00C6C854 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Nayutaya Inc.";
 				TargetAttributes = {
@@ -193,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9196D31BB41823000AE119 /* Projector.swift in Sources */,
+				FA9196D11BB417C1000AE119 /* WebMercator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADB628D1BB411BA00C6C854 /* WebMercatorTests.swift in Sources */,
+				FA9196D71BB41BB8000AE119 /* ProjectorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,26 +341,37 @@
 		FADB62921BB411BA00C6C854 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WebMercator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FADB62931BB411BA00C6C854 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WebMercator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -339,16 +384,27 @@
 		FADB62951BB411BA00C6C854 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WebMercatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FADB62961BB411BA00C6C854 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WebMercatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.WebMercatorTests;
@@ -375,6 +431,7 @@
 				FADB62931BB411BA00C6C854 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FADB62941BB411BA00C6C854 /* Build configuration list for PBXNativeTarget "WebMercatorTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +440,7 @@
 				FADB62961BB411BA00C6C854 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
