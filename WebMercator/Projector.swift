@@ -21,6 +21,14 @@ class Projector {
     class func mercatorYToLatitude(mercatorY: Double) -> Double {
         return asin(tanh(mercatorY * M_PI)) * RADIAN_TO_DEGREE
     }
+    
+    // メルカトルX座標を経度に変換する
+    class func mercatorXToLongitude(mercatorX: Double) -> Double {
+        var x = mercatorX
+        while ( x < -1.0 ) { x += 2.0 }
+        while ( x > +1.0 ) { x -= 2.0 }
+        return x * 180.0
+    }
 }
 
 /*
@@ -39,11 +47,4 @@ module.exports = class Projector
   tanh = (x)-> sinh(x) / cosh(x)
   # 双曲線逆正接を求める
   atanh = (x)-> log((1 + x) / (1 - x)) / 2
-
-  # メルカトルX座標を経度に変換する
-  @mercatorXToLongitude: (mercatorX)->
-    x = mercatorX
-    x += 2.0 while ( x < -1.0 )
-    x -= 2.0 while ( x > +1.0 )
-    return x * 180.0
 */

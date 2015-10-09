@@ -13,6 +13,7 @@ class ProjectorSpec : QuickSpec {
                     expect(Projector.latitudeToMercatorY(-85.0511)).to(beCloseTo(-1.0, within: 1.0e-5))
                 }
             }
+            
             describe(".longitudeToMercatorX") {
                 it("経度をメルカトルX座標に変換する") {
                     expect(Projector.longitudeToMercatorX(+180.0)).to(beCloseTo(+1.0, within: 1.0e-5))
@@ -22,6 +23,7 @@ class ProjectorSpec : QuickSpec {
                     expect(Projector.longitudeToMercatorX(-180.0)).to(beCloseTo(-1.0, within: 1.0e-5))
                 }
             }
+            
             describe(".mercatorYToLatitude") {
                 it("メルカトルY座標を緯度に変換する") {
                     expect(Projector.mercatorYToLatitude(+1.0)).to(beCloseTo(+85.0511, within: 1.0e-4))
@@ -29,24 +31,18 @@ class ProjectorSpec : QuickSpec {
                     expect(Projector.mercatorYToLatitude(-1.0)).to(beCloseTo(-85.0511, within: 1.0e-4))
                 }
             }
-            /*
-            describe("") {
-                it("") {
+            
+            describe(".mercatorXToLongitude") {
+                it("メルカトルX座標を経度に変換する") {
+                    expect(Projector.mercatorXToLongitude(+1.5)).to(beCloseTo( -90.0, within: 1.0e-15))
+                    expect(Projector.mercatorXToLongitude(+1.0)).to(beCloseTo(+180.0, within: 1.0e-15))
+                    expect(Projector.mercatorXToLongitude(+0.5)).to(beCloseTo( +90.0, within: 1.0e-15))
+                    expect(Projector.mercatorXToLongitude( 0.0)).to(beCloseTo(   0.0, within: 1.0e-15))
+                    expect(Projector.mercatorXToLongitude(-0.5)).to(beCloseTo( -90.0, within: 1.0e-15))
+                    expect(Projector.mercatorXToLongitude(-1.0)).to(beCloseTo(-180.0, within: 1.0e-15))
+                    expect(Projector.mercatorXToLongitude(-1.5)).to(beCloseTo( +90.0, within: 1.0e-15))
                 }
             }
-            */
         }
     }
 }
-
-/*
-  describe ".mercatorXToLongitude", ->
-    it "メルカトルX座標を経度に変換する", ->
-      expect(Projector.mercatorXToLongitude(+1.5)).toBeCloseTo( -90.0, 15)
-      expect(Projector.mercatorXToLongitude(+1.0)).toBeCloseTo(+180.0, 15)
-      expect(Projector.mercatorXToLongitude(+0.5)).toBeCloseTo( +90.0, 15)
-      expect(Projector.mercatorXToLongitude( 0.0)).toBeCloseTo(   0.0, 15)
-      expect(Projector.mercatorXToLongitude(-0.5)).toBeCloseTo( -90.0, 15)
-      expect(Projector.mercatorXToLongitude(-1.0)).toBeCloseTo(-180.0, 15)
-      expect(Projector.mercatorXToLongitude(-1.5)).toBeCloseTo( +90.0, 15)
-*/
