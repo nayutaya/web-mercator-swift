@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA6DA6E91BC7AF2F006BBA36 /* WebMercatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DA6E81BC7AF2F006BBA36 /* WebMercatorSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		FA7BFCD71BC7A22A008C18E7 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA7BFCCA1BC7961F008C18E7 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA7BFCD81BC7A235008C18E7 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA7BFCD21BC7A1CC008C18E7 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA7BFCD91BC7A2F0008C18E7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BFCCA1BC7961F008C18E7 /* Quick.framework */; };
 		FA7BFCDA1BC7A2F2008C18E7 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BFCD21BC7A1CC008C18E7 /* Nimble.framework */; };
-		FA9196D11BB417C1000AE119 /* WebMercator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9196D01BB417C1000AE119 /* WebMercator.swift */; settings = {ASSET_TAGS = (); }; };
 		FA9196D31BB41823000AE119 /* Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9196D21BB41823000AE119 /* Projector.swift */; settings = {ASSET_TAGS = (); }; };
 		FA9196D71BB41BB8000AE119 /* ProjectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9196D61BB41BB8000AE119 /* ProjectorSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		FADB62811BB411BA00C6C854 /* WebMercator.h in Headers */ = {isa = PBXBuildFile; fileRef = FADB62801BB411BA00C6C854 /* WebMercator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,10 +42,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FA6DA6E81BC7AF2F006BBA36 /* WebMercatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebMercatorSpec.swift; sourceTree = "<group>"; };
 		FA7BFCCA1BC7961F008C18E7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		FA7BFCD21BC7A1CC008C18E7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		FA9196D01BB417C1000AE119 /* WebMercator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebMercator.swift; sourceTree = "<group>"; };
 		FA9196D21BB41823000AE119 /* Projector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projector.swift; sourceTree = "<group>"; };
 		FA9196D61BB41BB8000AE119 /* ProjectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectorSpec.swift; sourceTree = "<group>"; };
 		FADB627D1BB411BA00C6C854 /* WebMercator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebMercator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +99,6 @@
 			children = (
 				FADB62801BB411BA00C6C854 /* WebMercator.h */,
 				FADB62821BB411BA00C6C854 /* Info.plist */,
-				FA9196D01BB417C1000AE119 /* WebMercator.swift */,
 				FA9196D21BB41823000AE119 /* Projector.swift */,
 			);
 			path = WebMercator;
@@ -114,7 +109,6 @@
 			children = (
 				FADB628E1BB411BA00C6C854 /* Info.plist */,
 				FA9196D61BB41BB8000AE119 /* ProjectorSpec.swift */,
-				FA6DA6E81BC7AF2F006BBA36 /* WebMercatorSpec.swift */,
 			);
 			path = WebMercatorTests;
 			sourceTree = "<group>";
@@ -229,7 +223,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9196D31BB41823000AE119 /* Projector.swift in Sources */,
-				FA9196D11BB417C1000AE119 /* WebMercator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +230,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA6DA6E91BC7AF2F006BBA36 /* WebMercatorSpec.swift in Sources */,
 				FA9196D71BB41BB8000AE119 /* ProjectorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
