@@ -5,6 +5,17 @@ import Nimble
 
 class ProjectorSpec : QuickSpec {
     override func spec() {
+        describe("const") {
+            it("") {
+                expect(Projector.LATITUDE_MAXIMUM_IN_DEGREES).to(beCloseTo( +85.051128, within: 1.0e-5))
+                expect(Projector.LATITUDE_MINIMUM_IN_DEGREES).to(beCloseTo( -85.051128, within: 1.0e-5))
+                expect(Projector.LATITUDE_DELTA_IN_DEGREES  ).to(beCloseTo(+170.102257, within: 1.0e-5))
+                expect(Projector.LONGITUDE_MAXIMUM_IN_DEGREES).to(beCloseTo(+180.0, within: 1.0e-5))
+                expect(Projector.LONGITUDE_MINIMUM_IN_DEGREES).to(beCloseTo(-180.0, within: 1.0e-5))
+                expect(Projector.LONGITUDE_DELTA_IN_DEGREES  ).to(beCloseTo(+360.0, within: 1.0e-5))
+            }
+        }
+
         describe(".latitudeToMercatorY") {
             it("緯度をメルカトルY座標に変換する") {
                 expect(Projector.latitudeToMercatorY(+85.05112)).to(beCloseTo(+1.0, within: 1.0e-5))
