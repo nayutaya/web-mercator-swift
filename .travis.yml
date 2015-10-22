@@ -1,10 +1,10 @@
 language: objective-c
 osx_image: xcode7
-# xcode_project: WebMercator.xcodeproj
-# xcode_scheme: WebMercator
+xcode_project: WebMercator.xcodeproj
+xcode_scheme: WebMercator
+xcode_sdk: iphonesimulator
 before_install:
   - brew update
+  - brew upgrade xctool || true
   - brew install carthage
   - carthage bootstrap --verbose
-script:
-  - xcodebuild -project WebMercator.xcodeproj -scheme WebMercator -sdk iphonesimulator9.0 -destination "OS=9.0,name=iPhone 4S" test
